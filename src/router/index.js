@@ -25,13 +25,13 @@ export default new Router({
             component: () => import('@/components/common/Home.vue'),
             // component: resolve => require(['../components/common/Home.vue'], resolve),
             meta: { title: '自述文件' },
-            // children: [
-            //     {
-            //         path: '/dashboard',
-            //         component: () => import('@/components/views/Dashboard.vue'),
+            children: [
+                {
+                    path: '/dashboard',
+                    component: () => import('@/components/views/Dashboard.vue'),
 
-            //         meta: { title: '系统首页' }
-            //     },
+                    meta: { title: '系统首页' }
+                },
             //     {
             //         path: '/icon',
             //         component: () => import('@/components/views/Icon.vue'),
@@ -110,7 +110,7 @@ export default new Router({
             //         component: () => import('@/components/views/403.vue'),
             //         meta: { title: '403' }
             //     }
-            // ]
+            ]
         },
 
         // {
