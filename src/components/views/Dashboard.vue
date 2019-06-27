@@ -211,7 +211,7 @@ export default {
     };
   },
   components: {
-    Schart
+    // Schart
   },
   computed: {
     role() {

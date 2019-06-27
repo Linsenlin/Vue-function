@@ -15,9 +15,7 @@ export default new Router({
         {
             path: '/login',
             name: 'login',
-            meta: {
-                title: 'Login - 登录'
-            },
+            meta: { title: 'Login - 登录' },
             component: () => import('@/components/views/Login.vue'),
         },
         {
