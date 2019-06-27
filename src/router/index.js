@@ -28,7 +28,6 @@ export default new Router({
                 {
                     path: '/dashboard',
                     component: () => import('@/components/views/Dashboard.vue'),
-
                     meta: { title: '系统首页' }
                 },
                 //     {
