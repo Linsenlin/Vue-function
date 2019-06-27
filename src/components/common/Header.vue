@@ -3,6 +3,7 @@
     <!-- 折叠按钮 -->
     <div class="collapse-btn" @click="collapseChage">
       <i class="el-icon-menu"></i>
+      <!-- <img src="../../assets/img/img_1.jpg"> -->
     </div>
     <div class="logo">vue功能组件</div>
     <div class="header-right">
@@ -47,7 +48,7 @@
   </div>
 </template>
 <script>
-import bus from "../common/bus";
+// import bus from "../common/bus";
 export default {
   data() {
     return {
@@ -74,7 +75,7 @@ export default {
     // 侧边栏折叠
     collapseChage() {
       this.collapse = !this.collapse;
-      bus.$emit("collapse", this.collapse);
+      this.$bus.$emit("collapse", this.collapse);
     },
     // 全屏事件
     handleFullScreen() {
@@ -104,6 +105,7 @@ export default {
       this.fullscreen = !this.fullscreen;
     }
   },
+  //mounted:html加载完成后执行。执行顺序：子组件-父组件
   mounted() {
     if (document.body.clientWidth < 1500) {
       this.collapseChage();

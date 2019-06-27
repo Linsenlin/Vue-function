@@ -4,12 +4,13 @@ import router from './router/index'
 import store from './store'
 // import axios from 'axios';
 import ElementUI from 'element-ui';
-
+import bus from '@/components/common/bus';
 import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
 
 
 Vue.config.productionTip = false
 // Vue.prototype.$axios = axios;
+Vue.prototype.$bus = bus;
 Vue.use(ElementUI, {
   size: 'small'
 });
