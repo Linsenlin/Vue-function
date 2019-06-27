@@ -48,6 +48,7 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
+          console.log("点击登录了");
           localStorage.setItem("ms_username", this.ruleForm.username);
           this.$router.push("/");
         } else {
