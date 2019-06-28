@@ -2,6 +2,7 @@
   <div class="wrapper">
     <v-head></v-head>
     <v-sidebar></v-sidebar>
+    <!-- <div class="content-box" :class="{'content-collapse':collapse}"> -->
     <div class="content-box" :class="{'content-collapse':collapse}">
       <!-- <v-tags></v-tags> -->
       <div class="content">
@@ -29,7 +30,7 @@ export default {
   },
   components: {
     vHead,
-    vSidebar,
+    vSidebar
     // vTags
   },
   created() {

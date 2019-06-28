@@ -8,10 +8,6 @@ export default new Router({
     base: process.env.BASE_URL,
     linkActiveClass: 'active',
     routes: [
-        // {
-        //     path: '/',
-        //     redirect: '/dashboard'
-        // },
         {
             path: '/login',
             name: 'login',
@@ -27,6 +23,11 @@ export default new Router({
                     path: '/dashboard',
                     component: () => import('@/components/views/Dashboard.vue'),
                     meta: { title: '系统首页' }
+                },
+                {
+                    path: '/shoppingcar',
+                    component: () => import('@/components/views/Shoppingcar.vue'),
+                    meta: { title: '购物车' }
                 },
                 //     {
                 //         path: '/icon',

@@ -55,6 +55,11 @@ export default {
           title: "系统首页"
         },
         {
+          icon: "el-icon-lx-home",
+          index: "shoppingcar",
+          title: "购物车功能"
+        },
+        {
           icon: "el-icon-lx-cascades",
           index: "table",
           title: "基础表格"
